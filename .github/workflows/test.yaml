@@ -15,7 +15,7 @@ jobs:
             - name: Checkout
               uses: actions/checkout@v3
 
-            - name: Test EXLINT
+            - name: Test EXLINTff
               uses: Exlint/actions@v1.0.0
               with:
                 groupId: 63d05778254995242597a6b1
