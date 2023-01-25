@@ -1,0 +1,27 @@
+name: Test
+
+on:
+    push:
+        branches: [main]
+
+jobs:
+    test:
+        name: TEST
+        permissions:
+            contents: write
+
+        runs-on: ubuntu-latest
+        steps:
+            - name: Setup Node environment
+              uses: Exlint/node-environment@v1.1.0
+              with:
+                  should-cache: false
+                  node-version: 18.13.0
+                  package-manager: pnpm
+                  package-manager-version: 7.25.0
+            
+            - name: Test EXLINT
+              uses: Exlint/actions@master
+              with:
+                groupId: 63d05778254995242597a6b1
+                token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2M2QwNTc0NDI1NDk5NTI0MjU5N2E2YWYiLCJlbWFpbCI6InRhbEBleGxpbnQuaW8iLCJpYXQiOjE2NzQ2MzQ3NDJ9.UxBILZnY7YoUlvbJMncRSW3nxGhYzeY8CrRv8CH99W8
