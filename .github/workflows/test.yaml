@@ -12,14 +12,6 @@ jobs:
 
         runs-on: ubuntu-latest
         steps:
-            - name: Setup Node environment
-              uses: Exlint/node-environment@v1.1.0
-              with:
-                  should-cache: false
-                  node-version: 18.13.0
-                  package-manager: pnpm
-                  package-manager-version: 7.25.0
-            
             - name: Test EXLINT
               uses: Exlint/actions@v1.0.0
               with:
