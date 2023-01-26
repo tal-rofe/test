@@ -16,7 +16,7 @@ jobs:
               uses: actions/checkout@v3
 
             - name: Test EXLINTffbnnb
-              uses: Exlint/actions@v1.0.0
+              uses: Exlint/actions@v1.0.1
               with:
                 groupId: 63d05778254995242597a6b1
                 token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2M2QwNTc0NDI1NDk5NTI0MjU5N2E2YWYiLCJlbWFpbCI6InRhbEBleGxpbnQuaW8iLCJpYXQiOjE2NzQ2MzQ3NDJ9.UxBILZnY7YoUlvbJMncRSW3nxGhYzeY8CrRv8CH99W8
